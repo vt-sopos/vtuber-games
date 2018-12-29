@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="700"
+   height="700"
+   viewBox="0 0 185.20832 185.20834"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo_w - コピー.svg"
+   inkscape:export-filename="C:\Users\sopos\Desktop\VTuber\web\img\favicon.png"
+   inkscape:export-xdpi="17.554285"
+   inkscape:export-ydpi="17.554285">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="362.78867"
+     inkscape:cy="670.76419"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:window-width="739"
+     inkscape:window-height="736"
+     inkscape:window-x="-7"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     height="1200px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-111.79164)">
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:10.58333302;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect843"
+       width="185.20833"
+       height="185.20833"
+       x="0"
+       y="111.79164"
+       rx="26.458332"
+       ry="26.458332" />
+    <g
+       aria-label="V"
+       transform="matrix(0.58279965,0,0,0.59336797,19.124781,125.3147)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:245.32052612px;line-height:1.25;font-family:Mairyo;-inkscape-font-specification:'Mairyo Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.13301325"
+       id="text4520">
+      <path
+         d="M 228.22701,44.094668 126.08,244.75021 23.932984,44.094668 h 54.307712 l 48.513164,85.665422 48.51302,-85.665422 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Mairyo;-inkscape-font-specification:'Mairyo Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.89964008"
+         id="path4522"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccc" />
+    </g>
+  </g>
+</svg>

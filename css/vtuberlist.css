@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+table {
+    border: medium dotted #CC0000;
+    padding: 10px 30px;
+    margin-left: 30px;
+}
+
+table .name {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+a.youtube {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+
+    background-size: 25px;
+    background-image: url(../img/youtube.png);
+}
+
+a.twitter {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+
+    background-size: 25px;
+    background-image: url(../img/twitter.png);
+}
+
+section a.twitter-timeline {
+    width: 300px;
+}

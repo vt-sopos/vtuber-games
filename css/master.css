@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding-top: 1px;
+    min-width: 450px;
+
+    background-color: whitesmoke;
+    font-family: -apple-system, YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+header {
+    background-image: url("../img/screenshot.png");
+    height: 150px;
+
+    background-color: white;
+}
+
+header img {
+    height: 100%;
+    background-color: #EE0000CC;
+    padding: 0 30px;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    font-size: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 25%;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+
+    text-decoration: none;
+    background-color: #CC0000;
+    color: white;
+}
+
+nav a#current {
+    background-color: whitesmoke;
+    color: #CC0000;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #CC0000;
+
+    text-decoration: underline;
+}
+
+section {
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+section h1 {
+    padding: 0 30px;
+
+    border-bottom: medium solid #CC0000;
+    font-size: 25px;
+}
+
+section h2 {
+    padding: 0 60px;
+    
+    border-bottom: medium solid #CC0000;
+    font-size: 20px;
+}
+
+section p {
+    text-indent: 1em;
+}
+
+section p a {
+    text-decoration: none;
+    color: #AA0000;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+}
