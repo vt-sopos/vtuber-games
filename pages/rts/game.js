@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const canvas = document.createElement('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-alert(window.innerWidth + "," + window.innerHeight);
 
 document.body.appendChild(canvas);
 
