@@ -55,7 +55,7 @@ Promise.all([
 
     //データ転送
     const vertexBuffer = gl.createBuffer();
-    const colorBuffer = gl.createBuffer();
+    const indexBuffer = gl.createBuffer();
 
     const VERTEX_ATTRIB_LOCATION = 0;
     const COLOR_ATTRIB_LOCATION = 1;
@@ -63,43 +63,42 @@ Promise.all([
     const VERTEX_SIZE = 3;
     const COLOR_SIZE = 4;
 
+    const STRIDE = (VERTEX_SIZE + COLOR_SIZE) * Float32Array.BYTES_PER_ELEMENT;
+    const POSITION_OFFSET = 0;
+    const COLOR_OFFSET = VERTEX_SIZE * Float32Array.BYTES_PER_ELEMENT;
+
     gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
     gl.enableVertexAttribArray(VERTEX_ATTRIB_LOCATION);
-
-    gl.vertexAttribPointer(VERTEX_ATTRIB_LOCATION, VERTEX_SIZE, gl.FLOAT, false, 0, 0);
-
-    gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
     gl.enableVertexAttribArray(COLOR_ATTRIB_LOCATION);
 
-    gl.vertexAttribPointer(COLOR_ATTRIB_LOCATION, COLOR_SIZE, gl.FLOAT, false, 0, 0);
+    gl.vertexAttribPointer(VERTEX_ATTRIB_LOCATION, VERTEX_SIZE, gl.FLOAT, false, STRIDE, POSITION_OFFSET);
+    gl.vertexAttribPointer(COLOR_ATTRIB_LOCATION, COLOR_SIZE, gl.FLOAT, false, STRIDE, COLOR_OFFSET);
 
     const vertices = new Float32Array([
         -0.5, 0.5,  0.0,
+        1.0, 0.0, 0.0, 1.0,
         -0.5, -0.5, 0.0,
+        0.0, 1.0, 0.0, 1.0,
         0.5,  0.5,  0.0,
-        -0.5, -0.5, 0.0,
+        0.0, 0.0, 1.0, 1.0,
         0.5,  -0.5, 0.0,
-        0.5,  0.5,  0.0
+        0.0, 0.0, 0.0, 1.0
     ]);
 
-    const colors = new Float32Array([
-        1.0, 0.0, 0.0, 1.0,
-        0.0, 1.0, 0.0, 1.0,
-        0.0, 0.0, 1.0, 1.0,
-        0.0, 1.0, 0.0, 1.0,
-        0.0, 0.0, 0.0, 1.0,
-        0.0, 0.0, 1.0, 1.0
+    const indices = new Uint16Array([
+        0, 1, 2,
+        1, 3, 2
     ]);
 
     gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
-
-    gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, colors, gl.STATIC_DRAW);
     
+    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+    gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
+
     const VERTEX_NUMS = 6;
 
-    gl.drawArrays(gl.TRIANGLES, 0, VERTEX_NUMS);
+    gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
 
     gl.flush();
 });
