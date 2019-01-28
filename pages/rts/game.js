@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //キャンバス作成
 const canvas = document.createElement('canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = document.documentElement.clientWidth;
+canvas.height = document.documentElement.clientHeight;
 
 document.body.appendChild(canvas);
 
