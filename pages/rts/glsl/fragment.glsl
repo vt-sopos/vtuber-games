@@ -2,10 +2,11 @@
 
 precision highp float;
 
-in vec4 vColor;
+in vec2 v_uv;
+uniform sampler2D tex;
 
-out vec4 fragmentColor;
+out vec4 fragment;
 
 void main() {
-    fragmentColor = vColor;
+    fragment = texture(tex, v_uv);
 }
